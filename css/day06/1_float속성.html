@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float 속성</title>
+  <style>
+    /* div태그를 display:inline하면 화면 맞춤이 안된다 */
+    #box1 {
+      background-color: ghostwhite;
+      padding: 20px;
+      /* 오른쪽은 블록요소라서 영향을 주지 않음 */
+      margin-right: 20px;
+      float: left;
+    }
+
+    #box2 {
+      background-color: whitesmoke;
+      padding: 20px;
+      margin-right: 20px;
+      float: left;
+    }
+
+    #box3 {
+      background-color: gainsboro;
+      padding: 20px;
+      float: right;
+      margin-left: 20px;
+    }
+
+    #box4 {
+      background-color: gray;
+      padding: 20px;
+      float: right;
+    }
+
+    #contents {
+      clear: both;
+      /* float 요소들 아래에 깔리지 않고 영향 받지 않게 하는 속성 */
+      width: 80%;
+      height: 500px;
+      background-color: darkgray;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>float 속성</h2>
+  <div id="box1">박스-1</div>
+  <div id="box2">박스-2</div>
+  <div id="box3">박스-3</div>
+  <div id="box4">박스-4</div>
+  <!-- 만약 1234 하고싶으면 오른쪽부터 float속성 해당되니까 3,4 아닌 4,3 순서로 쓰기 -->
+  <div id="contents">
+    <h2>실질적인 웹사이트 내용물</h2>
+    <p>우리 기업을 소개합니다</p>
+  </div>
+</body>
+
+</html>

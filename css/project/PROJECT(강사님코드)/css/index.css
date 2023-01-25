@@ -1,0 +1,64 @@
+/* index.html 화면에서 사용할 디자인 요소 */
+#main {
+  background-color: #f0f2f5;
+  padding: 72px 0 112px;
+}
+
+#contents {
+  width: 990px;
+  margin: 0 auto;
+}
+
+#content1 {
+  display: inline-block;
+  width: 580px;
+  box-sizing: border-box;
+  padding-right: 32px;
+  vertical-align: top;
+}
+
+#content2 {
+  display: inline-block;
+  width: 396px;
+  height: 456px;
+}
+
+#content1 img {
+  height: 106px;
+  margin: -28px;
+}
+
+#content1 h2 {
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 32px;
+  width: 500px;
+  padding-bottom: 20px;
+}
+
+#input-form {
+  padding: 10px 0 24px;
+  text-align: center;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  box-sizing: border-box;
+  margin-top: 40px;
+  width: 396px;
+  border-radius: 8px;
+}
+
+div.main-input {
+  width: 364px;
+  font-size: 17px;
+  padding: 6px 0;
+  text-align: center;
+  margin: auto;
+}
+
+div.main-input input {
+  border-radius: 6px;
+  padding: 14px 16px;
+  width: 330px;
+  border: 1px solid #dddfe2;
+}

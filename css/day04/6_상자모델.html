@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박스 모델 - 1</title>
+  <style>
+    div {
+      width: 200px;
+      height: 300px;
+      /* display: inline-block; 
+      -> 가운데라는 개념이 없음 그래서 margin auto 사용 불가 */
+      background-color: aqua;
+      border: 3px dotted red;
+      /* margin: 10px 20px 30px 40px;
+        위 부터 시계방향 */
+      /* margin: 10px 20px;
+        위,아래 좌,우 만 적용  */
+      /* margin: 50px;
+        위아래좌우 모든 방향 적용 */
+      /* margin: 50px 5px 10px
+        위 좌우 아래 -> 대부분 좌우는 간격 맞춤 */
+      /* margin: 0 auto;
+       위아래 0픽셀, 좌우는 auto->요소를 자동적으로 가운데 정렬 */
+      /* margin: auto; 
+      가운데 정렬 */
+      margin: 10px auto 20px;
+    }
+
+    #div2{
+      border-color: black;
+      border-style: solid;
+      border-width: 10px;
+    }
+
+    #div3{
+      border-style: dashed;
+      border-width: 10px 20px 3px;
+    }
+
+    #div4{
+      border-style: double;
+      border-width: 10px;
+    }
+
+    #div5{
+      border-top-width: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>display 속성</h2>
+  <div id="div1">
+    div태그1
+  </div>
+  <div id="div2">
+    div<span>태그</span>2
+    <!-- span태그는 기본적으로 inline속성 -->
+  </div>
+  <div id="div3">
+    div태그3
+  </div>
+  <div id="div4">
+    div태그4
+  </div>
+  <div id="div5">
+    div태그5
+  </div>
+
+</body>
+
+</html>
